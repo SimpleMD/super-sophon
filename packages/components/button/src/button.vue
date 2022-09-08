@@ -3,24 +3,24 @@
 </template>
 
 <script lang="ts">
-import { ElButton } from "element-plus";
-import { defineComponent } from "vue";
-import { buttonProps } from "./button";
+import { ElButton } from 'element-plus'
+import { defineComponent } from 'vue'
+import { buttonProps } from './button'
 
 export default defineComponent({
-  name: "WButton",
-  props:buttonProps,
+  name: 'WButton',
+  props: buttonProps,
   components: {
-    ElButton,
+    ElButton
   },
   setup() {
     const handlerClick = () => {
-      alert("WQ!!!!!!");
-    };
+      alert('WQ!!!!!!')
+    }
 
     return {
-      handlerClick,
-    };
-  },
-});
+      handlerClick
+    }
+  }
+})
 </script>

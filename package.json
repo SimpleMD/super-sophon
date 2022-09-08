@@ -66,9 +66,9 @@
   },
   "dependencies": {
     "@vueuse/core": "~6.1.0",
-    "@w-plus/components": "workspace:^1.0.0",
-    "@w-plus/theme-chalk": "workspace:^1.0.0",
-    "@w-plus/utils": "workspace:^1.0.0",
+    "@cblink/components": "workspace:^1.0.0",
+    "@cblink/theme-chalk": "workspace:^1.0.0",
+    "@cblink/utils": "workspace:^1.0.0",
     "dayjs": "^1.10.7",
     "element-plus": "^1.1.0-beta.24"
   },

@@ -42,7 +42,7 @@ export const genEntryTypes = async () => {
     for (const outputFile of emitOutput.getOutputFiles()) {
       const filepath = outputFile.getFilePath()
       await fs.mkdir(path.dirname(filepath), { recursive: true })
-      await fs.writeFile(filepath, outputFile.getText().replaceAll('@w-plus', '.'), 'utf8')
+      await fs.writeFile(filepath, outputFile.getText().replaceAll('@cblink', '.'), 'utf8')
     }
   })
   await Promise.all(tasks)

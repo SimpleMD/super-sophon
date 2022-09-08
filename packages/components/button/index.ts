@@ -1,9 +1,7 @@
-import { withInstall } from "@w-plus/utils/with-install"
-import Button from "./src/button.vue";
+import { withInstall } from '@cblink/utils/with-install'
+import Button from './src/button.vue'
 
-const WButton = withInstall(Button);
+const WButton = withInstall(Button)
 
-export{
-    WButton
-}
-export default WButton;
+export { WButton }
+export default WButton

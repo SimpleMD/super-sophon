@@ -4,6 +4,9 @@ importers:
 
   .:
     specifiers:
+      '@cblink/components': workspace:^1.0.0
+      '@cblink/theme-chalk': workspace:^1.0.0
+      '@cblink/utils': workspace:^1.0.0
       '@commitlint/config-conventional': ^17.0.3
       '@rollup/plugin-commonjs': ^21.0.1
       '@rollup/plugin-node-resolve': ^13.0.6
@@ -17,9 +20,6 @@ importers:
       '@vue/compiler-sfc': ^3.2.20
       '@vue/eslint-config-prettier': ^7.0.0
       '@vueuse/core': ~6.1.0
-      '@w-plus/components': workspace:^1.0.0
-      '@w-plus/theme-chalk': workspace:^1.0.0
-      '@w-plus/utils': workspace:^1.0.0
       babel-eslint: ^10.1.0
       chalk: ^4.1.2
       clipboard-copy: ^4.0.1
@@ -56,10 +56,10 @@ importers:
       typescript: ^4.4.4
       vue: ^3.2.20
     dependencies:
+      '@cblink/components': link:packages/components
+      '@cblink/theme-chalk': link:packages/theme-chalk
+      '@cblink/utils': link:packages/utils
       '@vueuse/core': 6.1.0_vue@3.2.20
-      '@w-plus/components': link:packages/components
-      '@w-plus/theme-chalk': link:packages/theme-chalk
-      '@w-plus/utils': link:packages/utils
       dayjs: 1.10.7
       element-plus: 1.1.0-beta.24_vue@3.2.20
     devDependencies:

@@ -1,6 +1,6 @@
-// import { WIcon,WButton } from "@w-plus/components";
-import * as components from "@w-plus/components";
-import type { App } from "vue";
+// import { WIcon,WButton } from "@cblink/components";
+import * as components from '@cblink/components'
+import type { App } from 'vue'
 
 // const components = [WIcon,WButton];
 
@@ -11,14 +11,14 @@ const install = (app: App) => {
   // components.forEach((component) => app.use(component));
 
   Object.entries(components).forEach(([name, component]) => {
-    app.component(name, component);
-  });
-};
+    app.component(name, component)
+  })
+}
 
 // app.use(WPlus)
 export default {
-  install,
-};
+  install
+}
 
 // import { WIcon } from 'w-plus
-export * from "@w-plus/components";
+export * from '@cblink/components'

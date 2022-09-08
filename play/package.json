@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@w-plus/play",
+  "name": "@cblink/play",
   "scripts": {
     "dev": "vite"
   },

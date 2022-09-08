@@ -10,8 +10,8 @@
     "build": "gulp -f build/gulpfile.ts",
     "docs:dev": "pnpm -C docs dev",
     "docs:build": "pnpm -C docs build",
-    "lint": "eslint --fix --ext .ts,.tsx,.vue src",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
+    "lint": "eslint --fix --ext .ts,.tsx,.vue packages/components",
+    "format": "prettier --write \"packages/**/*.ts\" \"packages/**/*.vue\"",
     "prepare": "husky install",
     "commit": "git-cz"
   },

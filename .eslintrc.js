@@ -13,12 +13,7 @@ module.exports = {
   },
   // 解析 .vue 文件
   parser: 'vue-eslint-parser',
-  extends: [
-    'plugin:json/recommended',
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
-    '@vue/prettier'
-  ],
+  extends: ['plugin:json/recommended', 'plugin:vue/vue3-essential', 'eslint:recommended', '@vue/prettier'],
   plugins: ['vue', '@typescript-eslint'],
   parserOptions: {
     parser: '@typescript-eslint/parser' // 解析 .ts 文件

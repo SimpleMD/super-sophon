@@ -23,8 +23,8 @@ export default series(
   parallel(
     withTaskName(
       'buildPackages',
-      () => run('pnpm run --parallel build --filter ./packages') // 这里指代执行每一个拥有gulpfile的文件进行打包
-    ), // 并行执行packages目录下的build脚本
+      () => run('pnpm run --parallel build --filter ./packages') // 查找所有的packages.json文件
+    ), // 并行执行build脚本
     withTaskName('buildFullComponent', () => run('pnpm run build buildFullComponent')), // 执行build命令时会调用rollup，给rollup传参数buildFullComponent，那么就会执行导出任务叫buildFullComponent
     withTaskName('buildComponent', () => run('pnpm run build buildComponent'))
   ),
